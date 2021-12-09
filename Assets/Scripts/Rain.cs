@@ -10,30 +10,25 @@ public class Rain : MonoBehaviour
     private Queue<GameObject> objectPool;
     public GameObject dropPrefab;
     private int poolSize = 1500;
-
     
     private void Start()
     {
         PoolWarmUp();
-        
     }
-
-
+    
     private void Update()
     {
         for (int i = 0; i < objectPool.Count; i++)
         {
             var drop = GetObjectFromPool();
-            drop.GetComponent<WaterDrop>().DropInit(this);
+            drop.GetComponent<Raindrop>().DropInit(this);
             drop.transform.position = new Vector3(
                 Random.Range(-15f, 15f),
                 Random.Range(15f, 25f),
                 Random.Range(-15f, 15f));
         }
-
     }
-
-
+    
     private GameObject GetObjectFromPool()
     {
         if (objectPool.TryDequeue(out var drop))
@@ -49,8 +44,7 @@ public class Rain : MonoBehaviour
         drop.GetComponent<MeshRenderer>().enabled = false;
         objectPool.Enqueue(drop);
     }
-    
-    
+
     private void PoolWarmUp()
     {
         objectPool = new Queue<GameObject>();
