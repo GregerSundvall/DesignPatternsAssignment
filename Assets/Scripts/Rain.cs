@@ -26,9 +26,9 @@ public class Rain : MonoBehaviour
             var drop = GetObjectFromPool();
             drop.GetComponent<WaterDrop>().DropInit(this);
             drop.transform.position = new Vector3(
-                Random.Range(-15, 15),
-                Random.Range(15, 25),
-                Random.Range(-15, 15));
+                Random.Range(-15f, 15f),
+                Random.Range(15f, 25f),
+                Random.Range(-15f, 15f));
         }
 
     }
