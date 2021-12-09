@@ -148,7 +148,7 @@ TerrainCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552302443}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 0e22b9e3d45da7641b53d33b2499250b, type: 2}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: 4dfd674614a94e2439540818d6fa9709, type: 2}
   m_EnableTreeColliders: 1
@@ -346,7 +346,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 70.3
+  field of view: 67.4
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -371,14 +371,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.44633457, y: -0.33278456, z: 0.18332821, w: 0.810204}
-  m_LocalPosition: {x: 12.8, y: 14.07, z: -9}
+  m_LocalRotation: {x: 0.09658182, y: -0.88977575, z: 0.22217597, w: 0.3867932}
+  m_LocalPosition: {x: 13.2, y: 5.6, z: 12.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 57.7, y: -44.66, z: 0}
+  m_LocalEulerAnglesHint: {x: 28.04, y: -133.01, z: 0}
 --- !u!1 &2088889663
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 2088889665}
   - component: {fileID: 2088889666}
   m_Layer: 0
-  m_Name: Fountain
+  m_Name: Rain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

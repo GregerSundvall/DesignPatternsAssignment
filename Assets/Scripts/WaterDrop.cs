@@ -5,19 +5,19 @@ using UnityEngine;
 
 public class WaterDrop : MonoBehaviour
 {
-    private Fountain fountain;
+    private Rain _rain;
 
-    public void DropInit(Fountain spawner)
+    public void DropInit(Rain rain)
     {
-        fountain = spawner;
+        _rain = rain;
     }
     
     
     private void Update()
     {
-        if (transform.position.y < -5)
+        if (transform.position.y < -1)
         {
-            fountain.ReturnObjectToPool(gameObject);
+            _rain.ReturnObjectToPool(gameObject);
         }
     }
 }
